@@ -7,18 +7,22 @@ return {
       "/usr/lib/jvm/java-21-openjdk/bin/java",
     })
 
-    -- 设置 M2_REPO 类路径变量（Eclipse 项目文件用到它）
-    if not opts.settings then
-      opts.settings = {}
-    end
-    if not opts.settings.java then
-      opts.settings.java = {}
-    end
-    if not opts.settings.java.eclipse then
-      opts.settings.java.eclipse = {}
-    end
-    opts.settings.java.eclipse.classpathVariables = {
-      ["M2_REPO"] = vim.fn.expand("~/.m2/repository"),
-    }
+    -- 合并 settings（避免覆盖 LazyVim 默认值）
+    opts.settings = vim.tbl_deep_extend("keep", opts.settings or {}, {
+      java = {
+        eclipse = {
+          downloadSources = true,
+          classpathVariables = {
+            ["M2_REPO"] = vim.fn.expand("~/.m2/repository"),
+          },
+        },
+        maven = { downloadSources = true },
+        inlayHints = { parameterNames = { enabled = "all" } },
+        implementationsCodeLens = { enabled = true },
+        referencesCodeLens = { enabled = true },
+        format = { enabled = true },
+      },
+      signatureHelp = { enabled = true },
+    })
   end,
 }

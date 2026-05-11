@@ -156,6 +156,7 @@ return {
         window = {
           mappings = {
             ["L"] = "expand_compact_dirs",
+            ["p"] = { "toggle_preview", config = { use_float = false } },
           },
         },
       },
