@@ -1,0 +1,31 @@
+{
+  "lsp": {
+    "jdtls": {
+      "settings": {
+        "java_home": "/home/ivan/.local/jdks/amazon-corretto-21",
+        "jdk_auto_download": false,
+        "lombok_support": true,
+        "initialization_options": {
+          "settings": {
+            "java": {
+              "configuration": {
+                "updateBuildConfiguration": "interactive",
+                "maven": {
+                  "userSettings": null
+                }
+              },
+              "import": {
+                "gradle": {
+                  "enabled": false
+                },
+                "maven": {
+                  "enabled": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

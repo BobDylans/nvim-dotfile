@@ -1,0 +1,5 @@
+. "$HOME/.cargo/env"
+export http_proxy=http://172.23.208.1:7897
+export https_proxy=http://172.23.208.1:7897
+export no_proxy=localhost,127.0.0.1,::1
+export NO_PROXY=localhost,127.0.0.1,::1
