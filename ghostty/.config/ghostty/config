@@ -1,0 +1,56 @@
+# 字体
+font-family = JetBrains Maple Mono
+font-size = 13
+
+# 内边距
+window-padding-x = 5
+window-padding-y = 5
+
+# 窗口装饰（隐藏标题栏）
+window-decoration = none
+
+# 透明度
+background-opacity = 0.9
+
+# Shell
+command = fish
+
+# 光标
+cursor-style = bar
+cursor-style-blink = true
+
+# 关闭时不确认
+confirm-close-surface = false
+
+# 关闭窗口大小提示
+resize-overlay = never
+
+# Tab 切换（与 kitty 一致）
+keybind = alt+left=previous_tab
+keybind = alt+right=next_tab
+
+# 配色（来自 kitty dank-theme）
+background = #141218
+foreground = #e6e0e9
+cursor-color = #e6e0e9
+cursor-text = #cac4cf
+selection-background = #ccc2dc
+selection-foreground = #381e72
+
+# 16 色 ANSI
+palette = 0=#141218
+palette = 1=#ff728f
+palette = 2=#7fff9a
+palette = 3=#ffda72
+palette = 4=#bca5f2
+palette = 5=#4e3d76
+palette = 6=#D0BCFF
+palette = 7=#f4efff
+palette = 8=#9d99a5
+palette = 9=#ff9fb2
+palette = 10=#a5ffb8
+palette = 11=#ffe7a5
+palette = 12=#d7c6ff
+palette = 13=#ded0ff
+palette = 14=#e9e0ff
+palette = 15=#faf8ff

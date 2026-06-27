@@ -1,0 +1,9 @@
+[Unit]
+Description=Run system-cleanup weekly
+
+[Timer]
+OnCalendar=Sun *-*-* 11:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
